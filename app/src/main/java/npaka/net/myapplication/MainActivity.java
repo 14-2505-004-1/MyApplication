@@ -13,16 +13,23 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void onInfomationButtonTapped(View view){
+    public void onInfomationButtonTapped(View view) {
         Intent intent = new Intent(this, info.class);
         startActivity(intent);
     }
-    public void onTestButtonTapped(View view){
+
+    public void onTestButtonTapped(View view) {
         Intent intent = new Intent(this, testmode.class);
         startActivity(intent);
     }
-    public void onHelpButtonTapped(View view){
+
+    public void onHelpButtonTapped(View view) {
         Intent intent = new Intent(this, help.class);
+        startActivity(intent);
+    }
+
+    public void onBeforeTestButtonTapped(View view) {
+        Intent intent = new Intent(this, beforeTest.class);
         startActivity(intent);
     }
 }
