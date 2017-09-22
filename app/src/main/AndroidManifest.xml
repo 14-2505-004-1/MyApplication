@@ -18,9 +18,10 @@
         </activity>
         <activity android:name=".info" />
         <activity android:name=".testmode" />
-        <activity android:name=".result"></activity>
+        <activity android:name=".result" />
         <activity android:name=".beforeTest" />
-        <activity android:name=".help"></activity>
+        <activity android:name=".help" />
+        <activity android:name=".MyPage"></activity>
     </application>
 
 </manifest>
