@@ -21,4 +21,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, testmode.class);
         startActivity(intent);
     }
+    public void onHelpButtonTapped(View view){
+        Intent intent = new Intent(this, help.class);
+        startActivity(intent);
+    }
 }
