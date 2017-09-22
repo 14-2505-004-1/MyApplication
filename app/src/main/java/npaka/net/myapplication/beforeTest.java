@@ -1,7 +1,9 @@
 package npaka.net.myapplication;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 public class beforeTest extends AppCompatActivity {
 
@@ -10,4 +12,9 @@ public class beforeTest extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_before_test);
     }
+    public void onTestButtonTapped(View view){
+        Intent intent = new Intent(this, testmode.class);
+        startActivity(intent);
+    }
+
 }
