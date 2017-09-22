@@ -13,7 +13,6 @@ public class info extends AppCompatActivity {
         setContentView(R.layout.activity_info);
     }
 
-
     public void onTestButtonTapped(View view){
         Intent intent = new Intent(this, testmode.class);
         startActivity(intent);
