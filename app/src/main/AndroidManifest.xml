@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".info" />
-        <activity android:name=".testmode"></activity>
+        <activity android:name=".testmode" />
+        <activity android:name=".beforeTest"></activity>
     </application>
 
 </manifest>
