@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.TextView;
 
 public class testmode extends AppCompatActivity {
 
@@ -16,9 +15,9 @@ public class testmode extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_testmode);
 
-        TextView countlabel = (TextView)findViewById(R.id.number);
+       /* TextView countlabel = (TextView)findViewById(R.id.number);
         count++;
-        countlabel.setText(String.valueOf(count));
+        countlabel.setText(String.valueOf(count));*/
     }
 
     public void onrNextButtonTapped(View view){
