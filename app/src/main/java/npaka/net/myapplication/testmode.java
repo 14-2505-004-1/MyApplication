@@ -35,4 +35,5 @@ public class testmode extends AppCompatActivity {
         Intent intent = new Intent(this, result.class);
         startActivity(intent);
     }
+
 }

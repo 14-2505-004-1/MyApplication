@@ -23,4 +23,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, help.class);
         startActivity(intent);
     }
+    public void onMypageButtonTapped(View view) {
+        Intent intent = new Intent(this, Mypage.class);
+        startActivity(intent);
+    }
 }

@@ -23,7 +23,8 @@
         <activity android:name=".help" />
         <activity android:name=".help_use" />
         <activity android:name=".help_kanpo" />
-        <activity android:name=".help_zetsu"></activity>
+        <activity android:name=".help_zetsu" />
+        <activity android:name=".Mypage"></activity>
     </application>
 
 </manifest>
