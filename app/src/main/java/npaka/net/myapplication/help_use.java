@@ -5,18 +5,15 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-public class info extends AppCompatActivity {
+public class help_use extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_info);
+        setContentView(R.layout.activity_help_use);
     }
-
-
-    public void onTestButtonTapped(View view){
-        Intent intent = new Intent(this, testmode.class);
+    public void onHelpButtonTapped(View view) {
+        Intent intent = new Intent(this, help.class);
         startActivity(intent);
     }
-
 }
