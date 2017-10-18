@@ -10,23 +10,30 @@ public class testmode extends AppCompatActivity {
 
     int qCounter = 3;
     int count = 0;
+    int sum = 10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_testmode);
 
+
+        Intent intent = getIntent();
+        int  intid = intent.getIntExtra("NUMBER",0);
+
         TextView countlabel = (TextView)findViewById(R.id.number);
-        count++;
+        count = intid + 1;
         countlabel.setText(String.valueOf(count));
     }
 
     public void onrNextButtonTapped(View view){
-        if(count > 2){
+        if(count >= sum){
             Intent intent = new Intent(this, result.class);
+            intent.putExtra("NUMBER",count);
             startActivity(intent);
         }else {
             Intent intent = new Intent(this, testmode.class);
+            intent.putExtra("NUMBER",count);
             startActivity(intent);
         }
 
